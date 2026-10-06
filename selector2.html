@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            #d1 div p{color: green;}
+
+            /* child selector */
+            #d1>p{color:blue;}
+
+            /* attribute selector */
+            input[type=text]{
+                background-color: yellow;
+            }
+            input[type=button]{
+                padding:5px;
+                border: 3px solid;
+                background-color: white;
+                color: red;
+                font-size: 25px;
+            }
+            h3{color: blue;}
+            .c1{color: red;}
+            #i1{color:green;}
+        </style>
+    </head>
+    <body>
+        <div id="d1">
+            <p>paragraph 1</p>
+            <p>paragraph 2</p>
+            <div>
+                <p>paragraph 3</p>
+            </div>
+            <h3 class="c1" id="i1" specifically(priority)></h3>
+        </div>
+        <p>paragraph 4</p>
+        <input type="text"/>
+        <input type="button" value="Click"/>
+    </body>
+</html>
