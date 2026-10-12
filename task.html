@@ -1,0 +1,57 @@
+<html>
+    <body>
+        <div id='d1'>
+            <div id="d2">
+                <h1>CSS TASK</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus quas odio est nisi magni, sit quis deserunt repellendus et quam, magnam quae consequatur porro iusto vitae pariatur quaerat. Modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo voluptate dolore molestias soluta, ipsum maiores minus odio possimus saepe? Dolor odio aliquam ipsam blanditiis harum! Nulla iure accusantium quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam cum ratione vel cupiditate est, aut sapiente qui, dolore praesentium accusamus magnam fuga hic expedita dolor, mollitia itaque. Eum, sint.</p>
+            </div>
+        </div>
+    </body>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        h1:active{color: blue;
+        font-size: 50px;}
+        p{
+            
+            text-align: justify;
+            font-size: 25px;
+            padding: auto;
+        }
+        p::before{content: "Hello everyone ";}
+        p::after{content: "😊";}
+        p:hover{
+            border: solid red;
+        }
+        #d1
+            {
+                height: 500px;
+                width:95%;
+                padding: 30px;
+                background-image: url("U.jpg");
+                background-position: center;
+                background-size: cover;
+                background-clip: content-box;
+                
+            }
+        #d2{
+                height: auto;
+                width: 85%;
+                margin: 50px;
+                padding: 40px;
+                background-color: rgb(232,232,197);
+                background-size: cover;
+                background-repeat: repeat-y;
+                background-position: center;
+                background-attachment: local;
+                overflow: auto;
+                border-style: dashed double;
+                border-color: red;
+                border-width: 5px;
+        }
+        p::first-line{font-size: 25px;color: red;text-decoration: underline; font-style: bold;}
+        p::first-letter{font-size: 60px; color: purple; font-style: bold;}
+    </style>
+</html>
