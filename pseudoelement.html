@@ -1,0 +1,48 @@
+<html>
+    <style>
+        p
+        {
+            border: 3px solid black;
+            padding: 20px;
+            text-align: justify;
+        }
+        p::first-line
+        {
+            font-size: 40px;
+            color: red;
+            text-decoration: underline;
+            font-variant: small-caps;
+        }
+        p::first-letter
+        {
+            color:purple;
+            font-size: 80px;
+        }
+        p::before
+        {
+            content: "😊😊";
+        }
+        p::after
+        {
+            content: "last😊";
+            color:green;
+            font-size: 15px;
+        }
+        p::selection
+        {
+            background-color: lightgreen;
+            color:red;
+        }
+        ul li::marker
+        {
+            font-size: 35px;
+            color: goldenrod;
+        }
+    </style>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor earum provident dolorum accusantium voluptas dolore quibusdam maiores reiciendis, ut explicabo magnam distinctio expedita iure unde est reprehenderit aspernatur ea sed.</p>
+    <ul>
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+    </ul>
+</html>
