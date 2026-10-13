@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+            .box
+            {
+                width: 100px;
+                text-align: center;
+                background-color: lightgreen;
+            }
+            .box1
+            {
+                width: 100px;
+                text-align: center;
+                background-color: lightgreen;
+                height: 80px;
+            }
+            .container1
+            {
+                display: flex;
+                background-color: black;
+                padding: 20px;
+                gap: 20px;
+                flex-direction: row;
+                justify-content: flex-start;
+                /*justify-content: center flex-start flex-end space-between space-around space-evenly*/
+                align-items: flex-start;
+                flex-wrap: wrap-reverse;/*nowrap wrap wrap-reverse*/
+            }
+            .container2
+            {
+                display: inline-flex;
+                background-color: black;
+                padding: 20px;
+                gap: 20px;
+                flex-direction: column-reverse;
+            }
+            .box:nth-child(2)
+            {
+                order: 1; /*right hand side shifted box 2   if order:-1; then starting box 2*/
+                flex: 1 1 200px;
+                    /*grow shrink*/
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container1">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+            <div class="box">13</div>
+            <div class="box">14</div>
+            <div class="box">15</div>
+            <div class="box">16</div>
+
+        </div>
+        <div class="container2">
+            <div class="box1">17</div>
+            <div class="box1">18</div>
+            <div class="box1">19</div>
+        </div>
+    </body>
+</html>
