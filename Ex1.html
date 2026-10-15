@@ -1,0 +1,46 @@
+<div class="container">
+    <img src="3.jfif" id="i1">
+    <div class="bl">Bottom left</div>
+    <div class="tr">Top right</div>
+</div>
+<style>
+    .container
+    {
+        height: 500px;
+        width: 380px;
+        border:1px solid rgb(136, 107, 179);
+        margin-top: 25px;
+        position: relative;
+    }
+    .container:hover
+    {
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border: 5px double rgb(193, 207, 248);
+    }
+    img
+    {
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+    }
+    .bl
+    {
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        font-size: large;
+    }
+    .tr
+    {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: large;
+    }
+    #i1:hover
+    {
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+</style>
