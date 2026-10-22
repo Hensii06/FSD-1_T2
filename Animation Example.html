@@ -1,0 +1,55 @@
+<h1>B2 Students</h1>
+<div class="d1"></div>
+<div class="d2"></div>
+<style>
+    h1
+    {
+        color: blue;
+        font-size: 30px;
+        animation-name: move;
+        animation-duration: 5s;
+        animation-delay: -2s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+    }
+    @keyframes move
+    {
+        0%
+        {
+            color: rgb(244, 193, 230);
+            transform: scale(1) translate(0);
+        }
+        33%
+        {
+            color: rgb(194, 227, 250);
+            transform: scale(1.2) translate(350px,350px);
+        }
+        66%
+        {
+            color: lightgreen;
+            transform: scale(1.2) translate(0,350px);
+        }
+        100%
+        {   
+            color: lightcoral;
+            transform: scale(1) translate(0);
+        }
+    }
+    .d1
+    {
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        margin: 20px auto;
+        transition-property: all;
+        transition-duration: 7s;
+        transition-delay: 1s;
+        transition-timing-function: ease-in-out;
+    }
+    .d1:hover
+    {
+        background-color: lightgreen;
+        transform: scale(2) translateX(50px) rotate(1200deg);
+    }
+</style>
