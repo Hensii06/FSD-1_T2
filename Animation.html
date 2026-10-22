@@ -1,0 +1,79 @@
+<div class="d1">Box</div>
+<div class="box">
+    <div class="d2">Happy Navratri</div>
+    <div class="d3">U</div>
+</div>
+<style>
+    .d3
+    {
+        height: 30px;
+        width: 30px;
+        background-color: #c0fae7;
+        text-align: center;
+        font-size: 15px;
+        animation-name:my;
+        animation-duration:5s;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;
+    }
+    @keyframes my
+    {
+    0%{background-color:red; transform: translate(20px,70px);}
+    25%{background-color: yellow; transform: translate(950px,70px) rotate(360deg);}
+    50%{background-color: green; transform: translate(950px,555px) rotate(360deg);}
+    75%{background-color: orangered; transform: translate(20px,555px) rotate(360deg); border-radius:50%;}
+    100%{background-color: red;}
+    }
+    @keyframes change1
+    {
+    0%{background-color: rgb(248, 213, 213);}
+    25%{background-color: rgb(208, 222, 235);}
+    50%{background-color: bisque;}
+    75%{background-color: rgb(211, 231, 156);}
+    100%{background-color: rgb(158, 137, 192);}
+    }
+    .d1
+    {
+        height: 100px;
+        width: 100px;
+        background-color: #c0fae7;
+        border-radius: 50%;
+        margin: 50px auto;
+        text-align: center;
+        font-size: 25px;
+        padding: 25px;
+        animation-name:change1;
+        animation-duration:5s;
+        animation-delay:2s;
+        animation-timing-function:ease-in;
+        animation-iteration-count:infinite;
+        animation-direction:alternate-reverse;
+    }
+    .box
+    {
+        width: 1000px;
+        height: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgb(19, 18, 18);
+        overflow: hidden;
+    }
+    .d2
+    {
+        font-size: 20px;
+        font-family: cursive;
+        animation-name:move;
+        animation-duration:7s;
+        animation-delay:1s;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;
+        text-transform:uppercase;
+        font-weight: 900;
+        color: #c0fae7;
+    }
+    @keyframes move
+    {
+    0%{color: azure; transform: translate(20px,20px);}
+    100%{color:bisque;transform: translate(100%,20px);}
+    }
+</style>
