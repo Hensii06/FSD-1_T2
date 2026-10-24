@@ -1,0 +1,41 @@
+<html>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <div id="d1">
+        <div id="d2">
+            <h1>Heading</h1>
+            <img src="1.png" class="i1">
+            <img src="small.jfif" class="i2">
+        </div>
+        <div id="d3">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <style>
+        #d1{
+            display:flex ;
+            justify-content: center;
+        }
+        #d2{
+            background-color: lightgray;
+            padding: 20PX;
+            width: 60%;
+        }
+        #d2 .i1{height: 300px;width: 300px; }
+        #d2 .i2{display: none;}
+        #d3{padding: 20px; width: 40%;text-align: center;}
+        @media screen and (max-width:500px){
+            #d1{
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
+            }
+            #d2 .i1{
+                display: none;
+                
+            }
+            #d2 .i2{display: block; width: 100%;}
+            
+        }
+    </style>
+</html>
