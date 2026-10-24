@@ -1,0 +1,30 @@
+<h1>Variable Example</h1>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea eveniet voluptas pariatur explicabo voluptates eos quos dicta. Impedit at numquam, laboriosam fugit atque ea tenetur saepe nesciunt dolores esse nisi.</p>
+<style>
+    :root
+    {
+        --all:solid double dashed;
+        --b:123ffe;
+        --t:all 2s;
+    }
+    h1
+    {
+        color: var(--b);
+        --td: overline underline;
+        text-decoration: var(--td);
+    }
+    p
+    {
+        --b:red;
+        color: var(--b);
+        border-width: 5px;
+        border-style: var(--all);
+        text-decoration: var(--td);
+        transition: var(--t);
+    }
+    p:hover
+    {
+        --b:green;
+        color: var(--b);
+    }
+</style>
